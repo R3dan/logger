@@ -1,7 +1,8 @@
 import typing
 import requests
-import pydir
+#import pydir
 import enum
+
 
 class Info:
     def __init__(self, time, level, logger, notes, date, func=None) -> None:
@@ -14,12 +15,12 @@ class Info:
 
 
 class File:
-    def __init__(self, file:Path, file_mode:str) -> None:
+    def __init__(self, file: str, file_mode: str) -> None:
         self.file = file
         self.file_mode = file_mode
 
-    def __call__(self, info:Info) -> typing.Any:
-        with open(self.file.path, self.file_mode) as f:
+    def __call__(self, info: Info) -> typing.Any:
+        with open(self.file, self.file_mode) as f:
             f.write(f"{info.time} | {info.logger} {info.level}: {info.notes}")
 
 
@@ -32,14 +33,15 @@ class Https(enum.Enum):
     HEAD = "HEAD"
     OPTIONS = "OPTIONS"
 
-    def __init__(self, url:str, mode:typing.Union[GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS]):
+    def __init__(
+        self, url: str, mode: typing.Union[GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS]
+    ):
         self.url = url
         self.type = type
         self.mode = mode.lower()
         print(f"Logger: Sending debug infomation to {self.url}")
-    
 
-    def __call__(self, info:dict) -> typing.Any:
+    def __call__(self, info: dict) -> typing.Any:
         mode = self.mode
         method = mode.upper()
         if method == "GET":
