@@ -1,0 +1,112 @@
+{
+    "colours":{
+        "1" : {
+            "date": {
+                "fore":"default",
+                "back":"default",
+                "style":"default"
+            },
+            "time": {
+                "fore":"default",
+                "back":"default",
+                "style":"default"
+            },
+            "level": {
+                "fore":"green",
+                "back":"default",
+                "style":"default"
+            },
+            "func": {
+                "fore":"default",
+                "back":"default",
+                "style":"default"
+            },
+            "notes": {
+                "fore":"default",
+                "back":"default",
+                "style":"default"
+            }
+        },
+        "2" : {
+            "date": {
+                "fore":"default",
+                "back":"default",
+                "style":"default"
+            },
+            "time": {
+                "fore":"default",
+                "back":"default",
+                "style":"default"
+            },
+            "level": {
+                "fore":"yellow",
+                "back":"default",
+                "style":"default"
+            },
+            "func": {
+                "fore":"default",
+                "back":"default",
+                "style":"default"
+            },
+            "notes": {
+                "fore":"default",
+                "back":"default",
+                "style":"default"
+            }
+        },
+        "3" : {
+            "date": {
+                "fore":"default",
+                "back":"default",
+                "style":"default"
+            },
+            "time": {
+                "fore":"default",
+                "back":"default",
+                "style":"default"
+            },
+            "level": {
+                "fore":"light red",
+                "back":"default",
+                "style":"default"
+            },
+            "func": {
+                "fore":"default",
+                "back":"default",
+                "style":"default"
+            },
+            "notes": {
+                "fore":"default",
+                "back":"default",
+                "style":"default"
+            }
+        },
+        "4" : {
+            "date": {
+                "fore":"default",
+                "back":"default",
+                "style":"default"
+            },
+            "time": {
+                "fore":"default",
+                "back":"default",
+                "style":"default"
+            },
+            "level": {
+                "fore":"red",
+                "back":"default",
+                "style":"default"
+            },
+            "func": {
+                "fore":"default",
+                "back":"default",
+                "style":"default"
+            },
+            "notes": {
+                "fore":"default",
+                "back":"default",
+                "style":"default"
+            }
+        }
+    }
+}
